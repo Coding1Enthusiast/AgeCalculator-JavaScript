@@ -1,0 +1,115 @@
+
+.attribution {
+  margin-top: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  font-family: poppins;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+}
+.container {
+  border-radius: 1rem 1rem 3.5rem 1rem;
+  background-color: hsl(0, 0%, 100%);
+  width: 40%;
+  padding: 2rem;
+}
+
+input {
+  width: 5rem;
+  padding: 0.2rem 0.5rem;
+  padding-right: 2.5rem;
+  font-size: 2rem;
+  font-family: poppins;
+  /* font-weight: 400; */
+}
+
+.input-container {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  position: relative;
+  right: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+  color: white;
+  float: right;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.output-area {
+  margin-top: 1rem;
+  position: relative;
+  margin-top: 4rem;
+}
+.output-area p {
+  font-weight: 800;
+  font-size: 3rem;
+  margin: 0;
+  font-style: italic;
+}
+.output-area span {
+  color: hsl(259, 100%, 65%);
+}
+
+label {
+  font-family: poppins;
+}
+
+input:focus {
+  outline-color: hsl(259, 100%, 65%);
+  caret-color: hsl(259, 100%, 65%);
+  caret-shape: bar;
+}
+
+small {
+  /* font-size: 0.6rem; */
+  font-style: italic;
+  color: red;
+}
+
+.add {
+  /* border: 1px solid red; */
+  color: red;
+}
+.highlight {
+  border: 1px solid red;
+}
+
+
+
+@media (max-width:700px)
+{
+  .container{
+    /* background-color: aqua; */
+    width: 80%;
+  }
+  input{
+    width: 2rem;
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  .output-area p
+  {
+    font-size: 2rem;
+  }
+  button{
+    right: 35%;
+  }
+  
+}
